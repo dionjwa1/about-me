@@ -12,15 +12,13 @@ var questionOne = prompt('Does Dion live in the state of WA?');
 
 var normalizedQuestionOne = questionOne.toLocaleLowerCase();
 
-if (normalizedQuestionOne === 'yes' || questionOne === 'y') {
-     // console.log(you are correct')
-      alert('You are Correct')
+if (normalizedQuestionOne === 'yes' || questionOne === 'y')
+// console.log(you are correct')
 
-} else {
+alert('You are Correct');
+
+else {
   alert('That is incorrect');
 }
 
 
-let banana = 12
-
-console.log(banana) 

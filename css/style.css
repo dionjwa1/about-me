@@ -7,5 +7,32 @@ body {
 
 h1{
     text-align: center;
+    background-color: bisque;
+}
 
+main{
+    background-color: teal;
+}
+
+ul{
+    width: 100px;
+    border: 15px solid black;
+    padding:50px;
+    margin: left 100px;  
+}
+
+ol{
+    
+    width: 100px;
+    border: 15px solid black;
+    padding:50px;
+    margin: center 100px;
+}
+
+p{
+    padding: 50px;
+}
+
+footer{
+    background-color:bisque;
 }

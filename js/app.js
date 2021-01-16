@@ -12,7 +12,7 @@ var userName = prompt('What is your name?');
 // console.log(userName);
 alert(`Welcome ${userName}! Enjoy the page.`);
 
-//questionTwo
+//questionOne
 var questionOne = prompt('Are you excited to learn more about Dion?').toUpperCase();
 if (questionOne === 'YES' || questionOne === 'Y') {
   //console.log('You are at the right place');
@@ -29,11 +29,48 @@ if (questionOne === 'YES' || questionOne === 'Y') {
 var questionTwo = prompt('Does Dion live in the state of WA?').toUpperCase();
 if (questionTwo === 'YES' || questionTwo === 'Y') {
   // console.log('You are correct');
-  alert('You are Correct');
+  alert('You are Correct!');
 } else if (questionTwo === 'NO' || questionTwo === 'N') {
   // console.log('That is incorrect');
-  alert('That is incorrect');
+  alert('That is incorrect!');
 } else {
   // console.log('That is incorrect');
   alert('Further research is required. See Dion for assitance.');
+}
+
+//questionThree
+var questionThree = prompt('Did Dion attend university in TX?').toUpperCase();
+if (questionThree === 'YES' || questionThree === 'Y') {
+  // console.log('You are correct');
+  alert('You are Correct!');
+} else if (questionThree === 'NO' || questionThree === 'N') {
+  // console.log('That is incorrect');
+  alert('That is incorrect!');
+} else {
+  // console.log('That is incorrect');
+  alert('That answer deserves more claification. See Dion for assitance.');
+}
+//questionFour
+var questionFour = prompt('Does Dion enjoy sushi over pizza?').toUpperCase();
+if (questionFour === 'YES' || questionFour === 'Y') {
+  // console.log('You are correct');
+  alert('You are Correct!');
+} else if (questionFour === 'NO' || questionFour === 'N') {
+  // console.log('That is incorrect');
+  alert('That is incorrect!');
+} else {
+  // console.log('That is incorrect');
+  alert('Further research is required. See Dion for assitance.');
+}
+//questionFive
+var questionFive = prompt('Have you enjoyed learning more about Dion?').toUpperCase();
+if (questionFive === 'YES' || questionFive === 'Y') {
+  // console.log('You are correct');
+  alert(`Awesome ${userName}! Glad you enjoyed it.`);
+} else if (questionFive === 'NO' || questionFive === 'N') {
+  // console.log('That is incorrect');
+  alert(`Darn ${userName}! Well, tell me about you.`);
+} else {
+  // console.log('That is incorrect');
+  alert(`Well ${userName}, there is more to learn. See Dion and find out more exiting information.`);
 }

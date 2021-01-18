@@ -99,3 +99,18 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
+//questionSeven: Create a question with multiple possible answers and use an array to store them. Provide 6 attempts at guessing or end the the question once correctly guessed. Display all possible answers.Use a loop.
+
+var countryList = ['CH, FJ, GE, GU, IN, KN, MV, UK, US, ZA?'].toUpperCase();
+var countriesInSpace = ['CH, IN, UK, US'];
+for (var j = 0; j < 6; j++) {
+  var questionSeven = prompt(`Hello ${userName}, Guess which of the following countries have a space program?${countryList}`);
+  if (questionSeven === countriesInSpace.length) {
+    alert(`${userName}, that is correct!`);
+    break;
+  }
+  else if (questionSeven === '') {
+    alert(`${userName}, incorrect, try again.`);
+  }
+
+}

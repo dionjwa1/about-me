@@ -1,8 +1,13 @@
 body {
-    background-color: grey;
-    width: 960px;
-    border: 1px solid black;
+    background-color: rgb(3, 100, 52);
+    width: auto;
+    border: 10px solid black;
     margin: auto;
+}
+
+div{ 
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -11,27 +16,33 @@ h1{
 }
 
 main{
-    background-color: teal;
+    background-color: rgb(211, 236, 236);
 }
 
 ul{
-    display: inline-block;
+    /* display: inline-grid; */
+    /* align-self: center; */
     width: 100px;
     border: 15px solid black;
     padding:50px;
-    margin: left 100px; 
+    margin: 50px;
+    /* margin: left 100px;  */
 
 }
 
 ol{
-    display: inline-block;
+    /* display: inline-grid; */
+    /* align-self: center; */
     width: 100px;
-    border: 15px solid black;
+    border: 15px solid gold;
     padding:50px;
-    margin: center 100px;
+    margin: 50px;
+    /* margin: left 100px; */
 }
 
 p{
+    font-size:20px;
+    font-style: Arial;
     padding: 50px;
 }
 

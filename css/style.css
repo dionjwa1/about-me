@@ -15,14 +15,16 @@ main{
 }
 
 ul{
+    display: inline-block;
     width: 100px;
     border: 15px solid black;
     padding:50px;
-    margin: left 100px;  
+    margin: left 100px; 
+
 }
 
 ol{
-    
+    display: inline-block;
     width: 100px;
     border: 15px solid black;
     padding:50px;
@@ -32,6 +34,8 @@ ol{
 p{
     padding: 50px;
 }
+
+
 
 footer{
     background-color:bisque;

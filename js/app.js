@@ -101,16 +101,26 @@ for (var i = 0; i < 4; i++) {
 
 //questionSeven: Create a question with multiple possible answers and use an array to store them. Provide 6 attempts at guessing or end the the question once correctly guessed. Display all possible answers.Use a loop.
 
-var countryList = ['CH, FJ, GE, GU, IN, KN, MV, UK, US, ZA?'].toUpperCase();
-var countriesInSpace = ['CH, IN, UK, US'];
-for (var j = 0; j < 6; j++) {
-  var questionSeven = prompt(`Hello ${userName}, Guess which of the following countries have a space program?${countryList}`);
-  if (questionSeven === countriesInSpace.length) {
-    alert(`${userName}, that is correct!`);
+var countryList = [' CH, FJ, GE, GU, IN, KN, MV, UK, US, ZA?'];
+var countriesInSpace = ['CH', 'IN', 'UK', 'US'];
+// var countriesNotInSpace = ['FJ', 'GE', 'GU', 'KN', 'MV', 'ZA'];
+var questionSeven = prompt(`Hello, ${userName} which of these countries have a space program ${countryList}`);
+var responseAttempts = 5;
+var correctAnswer = false;
+for (var i = 0; i < responseAttempts; i++) {
+  // console.log(countryList[i]);
+  for (var j = 0; j < countriesInSpace.length; j++) {
+    if (questionSeven === countriesInSpace[j]) {
+      alert(`${userName}, that is correct!`);
+      correctAnswer = true;
+      break;
+    }
+  }
+  if (correctAnswer === true) {
     break;
+  } else {
+    alert(`${userName}, that is incorrect!`);
+    questionSeven = prompt(`Hello, ${userName} which of these countries have a space program ${countryList}`);
   }
-  else if (questionSeven === '') {
-    alert(`${userName}, incorrect, try again.`);
-  }
-
 }
+
